@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49055d26-2b9a-424d-a312-fa71eaa126d1" name="Changes" comment="TrueFalse implementation and tests for user input parsing.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TrueFalseQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/TrueFalseQuestionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MultipleChoiceQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/MultipleChoiceQuestionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Question.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,7 +56,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TrueFalseQuestionTest">
+  <component name="RunManager" selected="Gradle.Tests in 'lc-studio-quiz-app.test'">
     <configuration name="Tests in 'lc-studio-quiz-app.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -105,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TrueFalseQuestionTest" />
         <item itemvalue="Gradle.Tests in 'lc-studio-quiz-app.test'" />
+        <item itemvalue="Gradle.TrueFalseQuestionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660058305636</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TrueFalse implementation and tests for user input parsing.">
+      <created>1660137801493</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660137801493</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
