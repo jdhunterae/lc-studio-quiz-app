@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49055d26-2b9a-424d-a312-fa71eaa126d1" name="Changes" comment="Checkbox implementation and tests for user input parsing.">
+    <list default="true" id="49055d26-2b9a-424d-a312-fa71eaa126d1" name="Changes" comment="Created Quiz class to utilize different Question types.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CheckboxQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CheckboxQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Quiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/CheckboxQuestionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/CheckboxQuestionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Quiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660143744367</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Created Quiz class to utilize different Question types.">
+      <created>1660157012516</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660157012516</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +193,7 @@
     <MESSAGE value="TrueFalse implementation and tests for user input parsing." />
     <MESSAGE value="MultipleChoice implementation and tests for user input parsing." />
     <MESSAGE value="Checkbox implementation and tests for user input parsing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Checkbox implementation and tests for user input parsing." />
+    <MESSAGE value="Created Quiz class to utilize different Question types." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Quiz class to utilize different Question types." />
   </component>
 </project>

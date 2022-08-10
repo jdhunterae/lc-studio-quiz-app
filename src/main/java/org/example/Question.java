@@ -2,9 +2,9 @@ package org.example;
 
 public abstract class Question {
     private static int questionId = 0;
-    protected int id;
     protected final String name;
     protected final String description;
+    protected int id;
     protected boolean answered;
 
     public Question(String description) {

@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Quiz {
-    private Scanner scanner;
-    private List<Question> questions;
+    private final Scanner scanner;
+    private final List<Question> questions;
 
     public Quiz() {
         scanner = new Scanner(System.in);
@@ -17,6 +17,27 @@ public class Quiz {
     public Quiz(List<Question> questions) {
         scanner = new Scanner(System.in);
         this.questions = questions;
+    }
+
+    public static Quiz sample() {
+        Quiz q = new Quiz();
+
+        q.add(new TrueFalseQuestion("Java is a compiled language.", true));
+        q.add(new TrueFalseQuestion("Abstract classes can be instantiated into objects.", false));
+
+        q.add(new MultipleChoiceQuestion("Which of the following is NOT a scope for Java classes and variables:",
+                Arrays.asList("private", "hidden", "protected", "public", "package-private"), "hidden"));
+
+        q.add(new CheckboxQuestion("Which of the following keywords are not used in Java:",
+                Arrays.asList("if", "while", "const", "switch", "case", "unless"),
+                Arrays.asList("const", "unless")));
+
+        return q;
+    }
+
+    public static void main(String[] args) {
+        Quiz quiz = Quiz.sample();
+        quiz.take();
     }
 
     public void add(Question question) {
@@ -55,7 +76,6 @@ public class Quiz {
                     invalid = false;
                 }
             } catch (Exception e) {
-                invalid = true;
             }
         } while (invalid);
 
@@ -91,26 +111,5 @@ public class Quiz {
         }
 
         return score;
-    }
-
-    public static Quiz sample() {
-        Quiz q = new Quiz();
-
-        q.add(new TrueFalseQuestion("Java is a compiled language.", true));
-        q.add(new TrueFalseQuestion("Abstract classes can be instantiated into objects.", false));
-
-        q.add(new MultipleChoiceQuestion("Which of the following is NOT a scope for Java classes and variables:",
-                Arrays.asList("private", "hidden", "protected", "public", "package-private"), "hidden"));
-
-        q.add(new CheckboxQuestion("Which of the following keywords are not used in Java:",
-                Arrays.asList("if", "while", "const", "switch", "case", "unless"),
-                Arrays.asList("const", "unless")));
-
-        return q;
-    }
-
-    public static void main(String[] args) {
-        Quiz quiz = Quiz.sample();
-        quiz.take();
     }
 }
