@@ -31,6 +31,6 @@ public abstract class Question {
     }
 
     private void generateId() {
-        id = questionId++;
+        id = ++questionId;
     }
 }

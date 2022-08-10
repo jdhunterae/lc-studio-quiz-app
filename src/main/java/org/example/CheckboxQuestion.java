@@ -23,7 +23,7 @@ public class CheckboxQuestion extends Question {
 
     @Override
     void parseResponse(String input) {
-        userAnswers = new ArrayList<String>();
+        userAnswers = new ArrayList<>();
         answered = false;
 
         if (input == null) {

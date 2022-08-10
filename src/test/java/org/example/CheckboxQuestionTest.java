@@ -39,7 +39,7 @@ public class CheckboxQuestionTest {
 
     @Test
     public void testCBQCorrectReturnsFalseIfCorrectButExtraAnswer() {
-        cbQuestion.parseResponse("apple::grape::pineapple");
+        cbQuestion.parseResponse("apple::pineapple::grape");
         assertFalse(cbQuestion.isCorrect());
     }
 }
