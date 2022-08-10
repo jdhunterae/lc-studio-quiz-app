@@ -21,17 +21,16 @@ public class MultipleChoiceQuestion extends Question {
 
     @Override
     void parseResponse(String input) {
+        answered = false;
+        userAnswer = "";
+
         if (input == null) {
-            answered = false;
-            userAnswer = "";
             return;
         }
 
         input = input.trim().toLowerCase();
 
         if (input.isEmpty() || !choices.contains(input)) {
-            answered = false;
-            userAnswer = "";
             return;
         }
 
