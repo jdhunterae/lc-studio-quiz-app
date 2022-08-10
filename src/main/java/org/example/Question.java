@@ -5,17 +5,20 @@ public abstract class Question {
     protected int id;
     protected final String name;
     protected final String description;
+    protected boolean answered;
 
     public Question(String description) {
         generateId();
         this.name = String.format("Question #%d", id);
         this.description = description;
+        answered = false;
     }
 
     public Question(String name, String description) {
         generateId();
         this.name = name;
         this.description = description;
+        answered = false;
     }
 
     abstract void parseResponse(String input);
